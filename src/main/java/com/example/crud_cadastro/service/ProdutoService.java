@@ -1,9 +1,11 @@
-package service;
+package com.example.crud_cadastro.service;
 
 import java.util.List;
 import org.springframework.stereotype.Service;
 import com.example.crud_cadastro.repository.ProdutoRepository;
-import com.model.Produto;
+import com.example.crud_cadastro.model.Produto;;
+
+
 
 @Service
 public class ProdutoService {

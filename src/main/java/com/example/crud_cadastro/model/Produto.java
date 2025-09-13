@@ -1,4 +1,4 @@
-package com.model;
+package com.example.crud_cadastro.model;
 
 import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
