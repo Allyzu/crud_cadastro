@@ -1,10 +1,10 @@
 package com.example.crud_cadastro.service;
 
 import java.util.List;
+import java.util.Optional;
 import org.springframework.stereotype.Service;
 import com.example.crud_cadastro.repository.ProdutoRepository;
 import com.example.crud_cadastro.model.Produto;;
-
 
 
 @Service
@@ -20,6 +20,10 @@ public class ProdutoService {
 
     public List<Produto> listarProdutos() {
         return produtoRepository.findAll();
+    }
+
+    public Optional<Produto> buscarProdutoPorId(Long id) {
+        return produtoRepository.findById(id);
     }
 
     public Produto salvarProduto(Produto produto) {
